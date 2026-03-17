@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "build": "nest build",
-    "start": "node dist/main",
+    "start": "node dist/src/main.js",
     "start:dev": "nest start --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/src/main.js",
+    "start:render": "pnpm build && node dist/src/main.js",
     "seed": "ts-node -r tsconfig-paths/register seed/seed.ts",
     "test": "jest",
     "test:watch": "jest --watch"
